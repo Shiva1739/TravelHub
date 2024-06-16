@@ -113,7 +113,7 @@
             <div>
                 <h1>Welcome to TravelHub</h1>
             <p class="lead">Explore the Beauty of India</p>
-            <a href="#destinations" class="btn btn-primary btn-lg">Explore Destinations</a>
+            <a href="destinations.html" class="btn btn-primary btn-lg">Explore Destinations</a>
             </div>
         </div>
     </section>
@@ -124,32 +124,32 @@
             <h2 class="section-heading mb-5">Popular Destinations</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="card shadow">
                         <img src="images/delhi.jpg" class="card-img-top " alt="Delhi">
                         <div class="card-body">
                             <h5 class="card-title">Delhi</h5>
-                            <p class="card-text">Explore the rich history and culture of Delhi.</p>
+                            <p class="card-text">Delhi, a major hub for tourism, offers a rich blend of historical landmarks like the Red Fort and Qutub Minar, vibrant markets.</p>
                             <a href="contact.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="card shadow">
                         <img src="images/goa.jpg" class="card-img-top" alt="Goa">
                         <div class="card-body">
                             <h5 class="card-title">Goa</h5>
-                            <p class="card-text">Relax on the beautiful beaches of Goa.</p>
+                            <p class="card-text">Goa, a popular tourist destination in India, is renowned for its stunning beaches, vibrant nightlife, and Portuguese-influenced architecture.</p>
                             <a href="contact.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="card shadow">
                         <img src="images/jaipur.jpg" class="card-img-top"
                             alt="Jaipur">
                         <div class="card-body">
                             <h5 class="card-title">Jaipur</h5>
-                            <p class="card-text">Experience the royal heritage of Jaipur.</p>
+                            <p class="card-text">Jaipur, known as the Pink City, is a major tourist destination in India famous for its historic palaces, forts, and vibrant bazaars.</p>
                             <a href="contact.html" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
@@ -292,24 +292,32 @@
                     <div class="card  border-0 h-100">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <h3 class="card-title mb-4">Get in Touch</h3>
-                            <form>
+                            <form id="contactForm">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Your Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter your name"
-                                        required>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter your email"
-                                        required>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" rows="3"
-                                        placeholder="Enter your message" required></textarea>
+                                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message" required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
+                            
+                            <script>
+                                document.getElementById('contactForm').onsubmit = function(event) {
+                                    if (this.checkValidity()) {
+                                        alert('Mail sent successfully');
+                                    } else {
+                                        // Prevent form submission if the form is invalid
+                                        event.preventDefault();
+                                    }
+                                };
+                            </script>
                         </div>
                     </div>
                 </div>
