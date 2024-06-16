@@ -1,0 +1,109 @@
+/* Custom CSS for TravelHub */
+
+/* Navbar */
+.navbar {
+    transition: all 0.3s ease;
+    background-color: #343a40; /* Dark background color */
+}
+
+.navbar a.navbar-brand img {
+    height: 40px; /* Adjust logo height */
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9); /* Navbar links color */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff; /* Hover color */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #333;
+    color: #fff;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+/* Featured Destinations */
+.destinations {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+}
+
+.destinations h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* Testimonials */
+.testimonials {
+    background-color: #343a40;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.testimonials .carousel-inner {
+    min-height: 300px; /* Minimum height for testimonials carousel */
+}
+
+.testimonials .carousel-control-prev-icon,
+.testimonials .carousel-control-next-icon {
+    background-color: #fff; /* Control buttons background color */
+}
+
+.testimonials .carousel-control-prev,
+.testimonials .carousel-control-next {
+    width: auto; /* Adjust control buttons size */
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4)); /* Add drop shadow */
+}
+
+.testimonials .carousel-control-prev:hover,
+.testimonials .carousel-control-next:hover {
+    color: #000; /* Hover color for control buttons */
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 60px 0;
+}
+
+footer h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.8); /* Footer links color */
+}
+
+footer a:hover {
+    color: #fff; /* Hover color for footer links */
+}

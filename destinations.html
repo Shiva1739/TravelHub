@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - TravelHub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .banner {
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            font-size: 2rem;
+            position: relative;
+            background-color: rgba(32, 32, 32, 0.562);
+        }
+        .banner-section {
+            background-image: url('images/destinationBanner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            font-size: 2rem;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        a {
+            all: unset;
+            color: white;
+            cursor: pointer;
+        }
+
+        .card {
+            border: none;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card-img-top{
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" style="width: 150px;" alt="TravelHub Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="banner-section">
+        <div id="home" class="banner">
+            <div>
+                <h1>Welcome to TravelHub</h1>
+            <p class="lead">Explore the Beauty of India</p>
+            <a href="#destinations" class="btn btn-primary btn-lg">Explore Destinations</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Destinations Page Content -->
+    <section id="destinations" class="section bg-light">
+        <div class="container">
+            <h2 class="section-heading mb-5 text-center">Explore Our Destinations</h2>
+    
+            <!-- First Section with 6 Destinations -->
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="firstDestinations">
+                <!-- Destination Card 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="images/jaipur.jpg" class="card-img-top" alt="Destination 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Jaipur, Rajasthan</h5>
+                            <p class="card-text">Known for its rich history, vibrant culture, and stunning palaces.</p>
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Destination Card 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="images/goa.jpg" class="card-img-top" alt="Destination 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Goa</h5>
+                            <p class="card-text">Famous for its beaches, nightlife, and Portuguese heritage.</p>
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Destination Card 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="images/Tajmahal.jpg" class="card-img-top" alt="Destination 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Agra, Uttar Pradesh</h5>
+                            <p class="card-text">Home to the iconic Taj Mahal, a UNESCO World Heritage site.</p>
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Destination Card 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="images/kerela.jpg" class="card-img-top" alt="Destination 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Kerala</h5>
+                            <p class="card-text">Renowned for its backwaters, lush landscapes, and Ayurvedic treatments.</p>
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Destination Card 5 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="images/varanasi.jpg" class="card-img-top" alt="Destination 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Varanasi, Uttar Pradesh</h5>
+                            <p class="card-text">One of the oldest inhabited cities in the world, known for its spiritual aura.</p>
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Destination Card 6 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="images/mumbai.jpg" class="card-img-top" alt="Destination 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Mumbai, Maharashtra</h5>
+                            <p class="card-text">India's financial powerhouse, known for Bollywood and its bustling life.</p>
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Load More Button -->
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-primary" id="loadMoreBtn">Load More Destinations</button>
+            </div>
+    
+            <!-- Second Section with 3 More Destinations (Initially Hidden) -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-4" id="additionalDestinations" style="display: none;">
+                <!-- Destination Card 7 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="images/ladakh.jpg" class="card-img-top" alt="Destination 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Leh-Ladakh, Jammu & Kashmir</h5>
+                            <p class="card-text">Known for its stunning landscapes, Buddhist monasteries, and adventure sports.</p>
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Destination Card 8 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="images/darjleeng.jpg" class="card-img-top" alt="Destination 8">
+                        <div class="card-body">
+                            <h5 class="card-title">Darjeeling, West Bengal</h5>
+                            <p class="card-text">Famous for its tea gardens, scenic views of the Himalayas, and toy train.</p>
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Destination Card 9 -->
+                <div class="col">
+                    <div class="card h-100 shadow">
+                        <img src="images/Rishikesh.jpg" class="card-img-top" alt="Destination 9">
+                        <div class="card-body">
+                            <h5 class="card-title">Rishikesh, Uttarakhand</h5>
+                            <p class="card-text">Known as the "Yoga Capital of the World" and for its spiritual retreats.</p>
+                            <a href="contact.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Destinations</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Mumbai</a></li>
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Bangalore</a></li>
+                        <li><a href="#">Jaipur</a></li>
+                        <li><a href="#">Goa</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Connect With Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="bi bi-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt"></i> 123 Hyderabad, India</li>
+                        <li><i class="bi bi-envelope"></i> info@travelhub.com</li>
+                        <li><i class="bi bi-phone"></i> +91 8367616883</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center py-4">
+                <p>&copy; 2024 Travel Hub. All rights reserved.</p>
+                <p>Designed by <a href="#" class="text-light text-decoration-none">Shiva</a></p>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <!-- Custom Script for Load More Button -->
+    <script>
+        document.getElementById('loadMoreBtn').addEventListener('click', function () {
+            document.getElementById('additionalDestinations').style.display = 'flex'; // Change display to flex to show row
+            this.style.display = 'none'; // Hide the load more button
+        });
+    </script>
+
+</body>
+
+</html>
